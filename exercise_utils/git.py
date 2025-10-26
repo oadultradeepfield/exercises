@@ -80,6 +80,6 @@ def remove_remote(remote: str, verbose: bool) -> None:
     run_command(["git", "remote", "rm", remote], verbose)
 
 
-def add_origin(remote: str, verbose: bool) -> None:
-    """Adds the origin remote with the given URL."""
-    run_command(["git", "remote", "add", "origin", remote], verbose)
+def add_remote(remote: str, remote_url: str, verbose: bool) -> None:
+    """Adds a remote with the given name and URL."""
+    run_command(["git", "remote", "add", remote, remote_url], verbose)
