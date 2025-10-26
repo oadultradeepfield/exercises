@@ -48,7 +48,7 @@ def merge(target_branch: str, ff: bool, verbose: bool) -> None:
 
 
 def merge_with_message(
-    target_branch: str, ff: bool, message: str, verbose: bool
+        target_branch: str, ff: bool, message: str, verbose: bool
 ) -> None:
     """Merges the current branch with the target one."""
     if ff:
@@ -78,3 +78,8 @@ def track_remote_branch(remote: str, branch: str, verbose: bool) -> None:
 def remove_remote(remote: str, verbose: bool) -> None:
     """Removes a given remote."""
     run_command(["git", "remote", "rm", remote], verbose)
+
+
+def add_origin(remote: str, verbose: bool) -> None:
+    """Adds the origin remote with the given URL."""
+    run_command(["git", "remote", "add", "origin", remote], verbose)
