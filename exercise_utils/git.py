@@ -48,7 +48,7 @@ def merge(target_branch: str, ff: bool, verbose: bool) -> None:
 
 
 def merge_with_message(
-        target_branch: str, ff: bool, message: str, verbose: bool
+    target_branch: str, ff: bool, message: str, verbose: bool
 ) -> None:
     """Merges the current branch with the target one."""
     if ff:
