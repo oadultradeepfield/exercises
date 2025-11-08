@@ -1,18 +1,36 @@
 # merge-squash
 
-<!--- Insert exercise description -->
+You are keeping notes on the cast of a sitcom you've started watching. Initially, you kept main cast and supporting cast on two separate branches.
+
+```mermaid
+gitGraph
+    commit id: "Add Joey"
+    commit id: "Add Phoebe"
+    branch supporting
+    checkout supporting
+    commit id: "Add Mike"
+    commit id: "Add Janice"
+    checkout main
+    commit id: "Add Ross"
+```
+
+Now you wish to keep everything in the `main` branch.
 
 ## Task
 
-<!--- Insert exercise task, simplify what needs to be done -->
+Squash-merge the `supporting` branch onto the `main` branch.
 
-## Hints
+The result should look as follows:
 
-<!--- Insert hints here -->
-<!---
-    Use Github Markdown's collapsible content:
-    <details>
-    <summary>...</summary>
-    ...
-    </details>
--->
+```mermaid
+gitGraph
+    commit id: "Add Joey"
+    commit id: "Add Phoebe"
+    branch supporting
+    checkout supporting
+    commit id: "Add Mike"
+    commit id: "Add Janice"
+    checkout main
+    commit id: "Add Ross"
+    commit id: "[HEAD → main] ..."
+```
