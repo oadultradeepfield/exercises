@@ -31,8 +31,3 @@ initialization:
     - type: commit
       empty: True
       message: Add Ross
-
-    - type: merge
-      branch-name: supporting
-      squash: true
-      message: Merge supporting branch

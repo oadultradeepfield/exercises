@@ -32,7 +32,17 @@ initialization:
       empty: True
       message: Add Ross
 
-    - type: merge
-      branch-name: supporting
-      squash: true
-      message: Merge supporting branch
+    - type: new-file
+      filename: mike.txt
+      content: |
+        Paul Rudd
+
+    - type: new-file
+      filename: janice.txt
+      content: |
+        Maggie Wheeler
+
+    - type: add
+      files:
+        - mike.txt
+        - janice.txt

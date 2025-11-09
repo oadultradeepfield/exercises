@@ -34,5 +34,4 @@ initialization:
 
     - type: merge
       branch-name: supporting
-      squash: true
-      message: Merge supporting branch
+      no-ff: true
