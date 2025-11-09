@@ -10,7 +10,6 @@ NOT_ON_MAIN = (
 )
 DETACHED_HEAD = "You should not be in a detached HEAD state! Use git checkout main to get back to main"
 NO_SQUASH_MERGE = "You need to squash merge the supporting branch onto main"
-FAST_FORWARD_MERGE = "You performed a fast-forward merge instead of a squash merge. The supporting branch commits should be squashed into one commit."
 REGULAR_MERGE = "You performed a regular merge instead of a squash merge. The supporting branch commits should be squashed into one commit."
 RESET_MESSAGE = 'Reset the repository using "gitmastery progress reset" and start again'
 
