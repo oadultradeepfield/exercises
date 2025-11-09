@@ -1,7 +1,6 @@
 from git_autograder import GitAutograderStatus, GitAutograderTestLoader, assert_output
 
 from ..verify import (
-    FAST_FORWARD_MERGE,
     NO_SQUASH_MERGE,
     NOT_ON_MAIN,
     REGULAR_MERGE,
